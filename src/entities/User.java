@@ -1,10 +1,10 @@
 package entities;
 
 public class User {
-    private int user_ID, age, zip_code;
-    private String gender, occupation;
+    private int user_ID, age;
+    private String gender, occupation, zip_code;
 
-    public User(int user_ID, int age, int zip_code, String gender, String occupation) {
+    public User(int user_ID, int age, String gender, String occupation, String zip_code) {
         this.user_ID = user_ID;
         this.age = age;
         this.zip_code = zip_code;
@@ -28,11 +28,11 @@ public class User {
         this.age = age;
     }
 
-    public int getZip_code() {
+    public String getZip_code() {
         return zip_code;
     }
 
-    public void setZip_code(int zip_code) {
+    public void setZip_code(String zip_code) {
         this.zip_code = zip_code;
     }
 

@@ -6,11 +6,11 @@ public class Movies {
                 isSci, isThriller, isWar, isWestern;
     private String movie_title, release_date, video_release_date, imdb_url;
 
-    public Movies(int movie_id, int isUnknown, int isAction, int isAdventure, int isAnimation, int isChildren,
+    public Movies(int movie_id, String movie_title, String release_date, String video_release_date,
+                  String imdb_url, int isUnknown, int isAction, int isAdventure, int isAnimation, int isChildren,
                   int isComedy, int isCrime, int isDocumentary, int isDrama, int isFantasy, int isFilmNoir,
                   int isHorror, int isMusical, int isMystery, int isRomance, int isSci, int isThriller, int isWar,
-                  int isWestern, String movie_title, String release_date, String video_release_date,
-                  String imdb_url) {
+                  int isWestern) {
         this.movie_id = movie_id;
         this.isUnknown = isUnknown;
         this.isAction = isAction;
