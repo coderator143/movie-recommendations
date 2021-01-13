@@ -3,10 +3,10 @@ package entities;
 public class Movies {
     private int movie_id, isUnknown, isAction, isAdventure, isAnimation, isChildren, isComedy, isCrime,
                 isDocumentary, isDrama, isFantasy, isFilmNoir, isHorror, isMusical, isMystery, isRomance,
-                isSci, isThriller, isWar, isWestern;
-    private String movie_title, release_date, video_release_date, imdb_url;
+                isSci, isThriller, isWar, isWestern, release_date;
+    private String movie_title, video_release_date, imdb_url;
 
-    public Movies(int movie_id, String movie_title, String release_date, String video_release_date,
+    public Movies(int movie_id, String movie_title, int release_date, String video_release_date,
                   String imdb_url, int isUnknown, int isAction, int isAdventure, int isAnimation, int isChildren,
                   int isComedy, int isCrime, int isDocumentary, int isDrama, int isFantasy, int isFilmNoir,
                   int isHorror, int isMusical, int isMystery, int isRomance, int isSci, int isThriller, int isWar,
@@ -205,11 +205,11 @@ public class Movies {
         this.movie_title = movie_title;
     }
 
-    public String getRelease_date() {
+    public int getRelease_date() {
         return release_date;
     }
 
-    public void setRelease_date(String release_date) {
+    public void setRelease_date(int release_date) {
         this.release_date = release_date;
     }
 
