@@ -1,6 +1,7 @@
 package warm_up;
 
 import data.Data_Collect;
+import entities.Genre;
 import entities.Movies;
 import entities.Ratings;
 
