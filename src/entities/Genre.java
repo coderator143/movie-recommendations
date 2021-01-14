@@ -8,7 +8,7 @@ public enum Genre {
 
     private int value;
 
-    private Genre(int value) {
+    Genre(int value) {
         this.value = value;
     }
 

@@ -70,16 +70,9 @@ public class Most_Watched_Genre {
             m.put(count, x);
         }
 
-        Set set = m.entrySet();
-        set.iterator();
-
         Map.Entry<Integer, Integer> entry = m.entrySet().iterator().next();
         int most_count = entry.getKey();
         int genre_id = entry.getValue();
-
-//        for (Map.Entry<Integer, Integer> entry : m.entrySet()) {
-//            System.out.println(entry.getKey() + ":" + entry.getValue());
-//        }
 
         String most_watched_genre = genre.get(genre_id);
 

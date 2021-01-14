@@ -26,9 +26,6 @@ public class Most_Watched_Movie {
             m.put(count, id);
         }
 
-        Set set = m.entrySet();
-        set.iterator();
-
         Map.Entry<Integer, Integer> entry = m.entrySet().iterator().next();
         int most_count = entry.getKey();
         int movie_id = entry.getValue();

@@ -1,7 +1,6 @@
 package warm_up;
 
 import data.Data_Collect;
-import entities.Genre;
 import entities.Movies;
 import entities.Ratings;
 
@@ -78,9 +77,6 @@ public class Top_Movie_Genre {
             System.out.println("No such movie with genre "+g+" exists");
             return;
         }
-
-        Set set = m.entrySet();
-        set.iterator();
 
         Map.Entry<Double, Integer> entry = m.entrySet().iterator().next();
         double best_rating = entry.getKey();

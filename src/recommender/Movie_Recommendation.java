@@ -1,4 +1,4 @@
-package Recommender;
+package recommender;
 
 import data.Data_Collect;
 import entities.Movies;

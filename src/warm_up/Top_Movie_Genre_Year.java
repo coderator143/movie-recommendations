@@ -99,9 +99,6 @@ public class Top_Movie_Genre_Year {
             return;
         }
 
-        Set set = m.entrySet();
-        set.iterator();
-
         Map.Entry<Double, Integer> entry = m.entrySet().iterator().next();
         double best_rating = entry.getKey();
         int movie_id = entry.getValue();

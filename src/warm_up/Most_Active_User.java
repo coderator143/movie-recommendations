@@ -25,16 +25,9 @@ public class Most_Active_User {
             m.put(count, id);
         }
 
-        Set set = m.entrySet();
-        set.iterator();
-
         Map.Entry<Integer, Integer> entry = m.entrySet().iterator().next();
         int best_count = entry.getKey();
         int user_id = entry.getValue();
-
-//        for (Map.Entry<Integer, Integer> entry : m.entrySet()) {
-//            System.out.println(entry.getKey() + ":" + entry.getValue());
-//        }
 
         for(User user: userArrayList) {
             if(user.getUser_ID() == user_id) {

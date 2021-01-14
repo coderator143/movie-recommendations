@@ -80,8 +80,6 @@ public class Highest_Rated_Genre {
             m.put(avg_rating, x);
         }
 
-        Set set = m.entrySet();
-        set.iterator();
         m.remove(NaN);
 
         Map.Entry<Double, Integer> entry = m.entrySet().iterator().next();
