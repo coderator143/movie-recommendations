@@ -77,15 +77,16 @@ public class Data_Collect {
             data1.append(data.charAt(data.length() - 1));
             data = data1.toString();
             String[] ar = data.split("[|]");
+            //System.out.println(ar.length);
             try {
                 Movies movie = new Movies(Integer.parseInt(ar[0]), ar[1], Integer.parseInt(ar[2]), ar[3],
-                        ar[4], Integer.parseInt(ar[5]), Integer.parseInt(ar[6]), Integer.parseInt(ar[7]),
-                        Integer.parseInt(ar[8]), Integer.parseInt(ar[9]), Integer.parseInt(ar[10]),
-                        Integer.parseInt(ar[11]), Integer.parseInt(ar[12]), Integer.parseInt(ar[13]),
-                        Integer.parseInt(ar[14]), Integer.parseInt(ar[15]), Integer.parseInt(ar[16]),
-                        Integer.parseInt(ar[17]), Integer.parseInt(ar[18]), Integer.parseInt(ar[19]),
-                        Integer.parseInt(ar[20]), Integer.parseInt(ar[21]), Integer.parseInt(ar[22]),
-                        Integer.parseInt(ar[23]));
+                        ar[4], Integer.parseInt(ar[6]), Integer.parseInt(ar[7]), Integer.parseInt(ar[8]),
+                        Integer.parseInt(ar[9]), Integer.parseInt(ar[10]), Integer.parseInt(ar[11]),
+                        Integer.parseInt(ar[12]), Integer.parseInt(ar[13]), Integer.parseInt(ar[14]),
+                        Integer.parseInt(ar[15]), Integer.parseInt(ar[16]), Integer.parseInt(ar[17]),
+                        Integer.parseInt(ar[18]), Integer.parseInt(ar[19]), Integer.parseInt(ar[20]),
+                        Integer.parseInt(ar[21]), Integer.parseInt(ar[22]), Integer.parseInt(ar[23]),
+                        Integer.parseInt(ar[24]));
                 moviesArrayList.add(movie);
             }
             catch (Exception e) { /*System.out.println("Trash row");*/ }

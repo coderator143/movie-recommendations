@@ -74,7 +74,7 @@ public class Top_Movie_Genre {
         }
 
         if(m.isEmpty()) {
-            System.out.println("No such movie with genre "+g+" sexists");
+            System.out.println("No such movie with genre "+g+" exists");
             return;
         }
 
